@@ -1,9 +1,9 @@
 require 'sinatra'
 
 get '/' do
-  "Hello Wyncode"
+  File.read(File.join('public', 'hello.txt'))
 end
 
 get '/wyncode' do
-  "Hello World"
+  "Hello Wyncode"
 end
